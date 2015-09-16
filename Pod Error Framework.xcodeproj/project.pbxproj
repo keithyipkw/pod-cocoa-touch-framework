@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19C01E021BA9645100D59373 /* SwiftAddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19C01E011BA9645100D59373 /* SwiftAddressBook.framework */; };
+		19C01E031BA9645A00D59373 /* SwiftAddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19C01E011BA9645100D59373 /* SwiftAddressBook.framework */; };
+		19C01E041BA9645A00D59373 /* SwiftAddressBook.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19C01E011BA9645100D59373 /* SwiftAddressBook.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3C206C299949CEC2DD342018 /* Pods_Pod_Error_Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D8887D1BABEA0DF8E1AEC4E /* Pods_Pod_Error_Framework.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		596E6A2137F64A3113F28CBF /* Pods_PodErrorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9043FAB7F41A8EFA9079F9BB /* Pods_PodErrorKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		94058EA11B81F9870026FAC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94058EA01B81F9870026FAC9 /* AppDelegate.swift */; };
@@ -21,8 +24,6 @@
 		94058EDC1B81F99D0026FAC9 /* PodErrorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94058EC51B81F99D0026FAC9 /* PodErrorKit.framework */; };
 		94058EDD1B81F99D0026FAC9 /* PodErrorKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 94058EC51B81F99D0026FAC9 /* PodErrorKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		94058EE61B81F9C20026FAC9 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94058EE51B81F9C20026FAC9 /* Utils.swift */; };
-		B49F9BBAA85FAC63AAE183B6 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D62A07A8EAF3E985E1E3E0EE /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		F90F57C987B337E7C0A33DE9 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D62A07A8EAF3E985E1E3E0EE /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				19C01E041BA9645A00D59373 /* SwiftAddressBook.framework in Embed Frameworks */,
 				94058EDD1B81F99D0026FAC9 /* PodErrorKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -71,6 +73,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		19C01E011BA9645100D59373 /* SwiftAddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftAddressBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9043FAB7F41A8EFA9079F9BB /* Pods_PodErrorKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PodErrorKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94058E9B1B81F9870026FAC9 /* Pod Error Framework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pod Error Framework.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94058E9F1B81F9870026FAC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -102,9 +105,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19C01E031BA9645A00D59373 /* SwiftAddressBook.framework in Frameworks */,
 				94058EDC1B81F99D0026FAC9 /* PodErrorKit.framework in Frameworks */,
-				B49F9BBAA85FAC63AAE183B6 /* Pods.framework in Frameworks */,
 				3C206C299949CEC2DD342018 /* Pods_Pod_Error_Framework.framework in Frameworks */,
+				19C01E021BA9645100D59373 /* SwiftAddressBook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,7 +123,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F90F57C987B337E7C0A33DE9 /* Pods.framework in Frameworks */,
 				596E6A2137F64A3113F28CBF /* Pods_PodErrorKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,6 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				D62A07A8EAF3E985E1E3E0EE /* Pods.framework */,
+				19C01E011BA9645100D59373 /* SwiftAddressBook.framework */,
 				9D8887D1BABEA0DF8E1AEC4E /* Pods_Pod_Error_Framework.framework */,
 				9043FAB7F41A8EFA9079F9BB /* Pods_PodErrorKit.framework */,
 			);
@@ -669,6 +673,10 @@
 			baseConfigurationReference = AE18E265B7C4FAE6B8FB2B73 /* Pods-Pod Error Framework.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Pod_Error_Framework-gjbskcxcghgoligwwrxfosumxjqw/Build/Products/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = "Pod Error Framework/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -680,6 +688,10 @@
 			baseConfigurationReference = EFEA31134101922E327C471D /* Pods-Pod Error Framework.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Pod_Error_Framework-gjbskcxcghgoligwwrxfosumxjqw/Build/Products/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = "Pod Error Framework/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
